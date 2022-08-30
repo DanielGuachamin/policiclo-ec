@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="policiclo.TablaCiclistas"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="AQUI VA INFO DE CICLISTAS DE LA BASE DE DATOS"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button BackgroundColor="Blue"
+                    TextColor="White"
+                    Text="Volver al Inicio"
+                    Clicked="volverButton_Clicked"
+                    x:Name="volverButton"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

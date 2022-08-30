@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="policiclo.Registro"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Registrate en Ciclo Trip"
+                   FontSize="35"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="DarkOrange"/>
+            <Frame Margin="10">
+                <StackLayout >
+                    <Entry Placeholder="Ingresa nuevo correo"
+                   x:Name="userNewEmail"></Entry>
+                    <Entry Placeholder="Ingresa nueva contraseña"
+                   x:Name="userNewPassword"></Entry>
+                    <Button BackgroundColor="Black"
+                    TextColor="White"
+                    Text="Registrarse"
+                    Clicked="registrarButton_Clicked"
+                    x:Name="registroButton"></Button>
+                    <BoxView HeightRequest="3"
+                 HorizontalOptions="FillAndExpand"
+                 BackgroundColor="Green"></BoxView>
+                    <Button BackgroundColor="Blue"
+                    TextColor="White"
+                    Text="Volver al Inicio"
+                    Clicked="volverButton_Clicked"
+                    x:Name="volverButton"></Button>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="policiclo.MainPage"
+             BackgroundImageSource="carapaz1.jpg"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout>
+        <Label Text="Bienvenid@ a Ciclo Trip"
+               FontSize="30"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               TextColor="DarkOrange"></Label>
+        <BoxView HeightRequest="3"
+                 HorizontalOptions="FillAndExpand"
+                 BackgroundColor="Green"></BoxView>
+        <Frame VerticalOptions="EndAndExpand"
+               Margin="15">
+            <StackLayout>
+                <Entry Placeholder="Ingresa correo"
+               x:Name="UserLoginEmail"></Entry>
+                <Entry Placeholder="Ingrese contraseña"
+               x:Name="UserLoginPassword"></Entry>
+                <Button BackgroundColor="Black"
+                Clicked="inicioButton_Clicked"
+                TextColor="White"
+                Text="Iniciar sesión"
+                x:Name="iniciobutton"></Button>
+                <BoxView HeightRequest="3"
+                 HorizontalOptions="FillAndExpand"
+                 BackgroundColor="Green"></BoxView>
+                <Button Text="Registro"
+                        BackgroundColor="Blue"
+                        TextColor="White"
+                        Clicked="openRegister_Clicked"/>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>

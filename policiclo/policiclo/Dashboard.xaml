@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="policiclo.Dashboard"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label  x:Name="userName"
+                    HorizontalOptions="Center"
+                    FontSize="Title"
+                    FontAttributes="Bold"
+                    TextColor="DarkOrange"/>
+            <Frame VerticalOptions="CenterAndExpand">
+                <StackLayout>
+                    <Label Text="Tu información"/>
+                    <Frame 
+                             BorderColor="Orange"
+                             CornerRadius="5"
+                            BackgroundColor="White"
+                            HasShadow="True"
+                             Padding="10"
+                            Margin="10">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="35" />
+                                <RowDefinition Height="35" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="110" />
+                                <ColumnDefinition Width="210" />
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.RowSpan="2" 
+                                Source="bicicleta.jpg" 
+                                Aspect="AspectFill"
+                                HeightRequest="60" 
+                                WidthRequest="60" />
+                            <Label Grid.Column="1" 
+                                Text="Richard Carapaz" 
+                                FontAttributes="Bold"
+                                LineBreakMode="TailTruncation" />
+                            <Label Grid.Row="1"
+                                Grid.Column="1" 
+                                Text="Ciclista profesional"
+                                LineBreakMode="TailTruncation"
+                                FontAttributes="Italic" 
+                                VerticalOptions="End" />
+                        </Grid>
+                    </Frame>
+                    <BoxView HeightRequest="3"
+                 HorizontalOptions="FillAndExpand"
+                 BackgroundColor="Green"></BoxView>
+                    <Button Text="Ver ubicación ciclistas"
+                            BackgroundColor="Blue"
+                            TextColor="White"
+                            Clicked="verTabla_Clicked"/>
+                </StackLayout>
+            </Frame>
+            <Button x:Name="salir"
+                    Text="Cerrar sesión"
+                    BackgroundColor="Red"
+                    TextColor="White"
+                    Clicked="cerrarButton_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
