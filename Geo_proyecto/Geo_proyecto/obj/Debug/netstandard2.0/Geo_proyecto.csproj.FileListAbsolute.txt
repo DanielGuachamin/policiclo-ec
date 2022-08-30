@@ -1,0 +1,16 @@
+D:\Users\Cumbal\Desktop\Noemi_actual5semestre\xamarin_noga\Transform\Geo_proyecto\Geo_proyecto\Geo_proyecto\obj\Debug\netstandard2.0\Geo_proyecto.csproj.AssemblyReference.cache
+D:\Users\Cumbal\Desktop\Noemi_actual5semestre\xamarin_noga\Transform\Geo_proyecto\Geo_proyecto\Geo_proyecto\obj\Debug\netstandard2.0\Geo_proyecto.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\Cumbal\Desktop\Noemi_actual5semestre\xamarin_noga\Transform\Geo_proyecto\Geo_proyecto\Geo_proyecto\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Users\Cumbal\Desktop\Noemi_actual5semestre\xamarin_noga\Transform\Geo_proyecto\Geo_proyecto\Geo_proyecto\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\Users\Cumbal\Desktop\Noemi_actual5semestre\xamarin_noga\Transform\Geo_proyecto\Geo_proyecto\Geo_proyecto\obj\Debug\netstandard2.0\Noemi.xaml.g.cs
+D:\Users\Cumbal\Desktop\Noemi_actual5semestre\xamarin_noga\Transform\Geo_proyecto\Geo_proyecto\Geo_proyecto\obj\Debug\netstandard2.0\Geo_proyecto.AssemblyInfoInputs.cache
+D:\Users\Cumbal\Desktop\Noemi_actual5semestre\xamarin_noga\Transform\Geo_proyecto\Geo_proyecto\Geo_proyecto\obj\Debug\netstandard2.0\Geo_proyecto.AssemblyInfo.cs
+D:\Users\Cumbal\Desktop\Noemi_actual5semestre\xamarin_noga\Transform\Geo_proyecto\Geo_proyecto\Geo_proyecto\obj\Debug\netstandard2.0\Geo_proyecto.csproj.CoreCompileInputs.cache
+D:\Users\Cumbal\Desktop\Noemi_actual5semestre\xamarin_noga\Transform\Geo_proyecto\Geo_proyecto\Geo_proyecto\obj\Debug\netstandard2.0\Geo_proyecto.dll
+D:\Users\Cumbal\Desktop\Noemi_actual5semestre\xamarin_noga\Transform\Geo_proyecto\Geo_proyecto\Geo_proyecto\obj\Debug\netstandard2.0\refint\Geo_proyecto.dll
+D:\Users\Cumbal\Desktop\Noemi_actual5semestre\xamarin_noga\Transform\Geo_proyecto\Geo_proyecto\Geo_proyecto\obj\Debug\netstandard2.0\Geo_proyecto.pdb
+D:\Users\Cumbal\Desktop\Noemi_actual5semestre\xamarin_noga\Transform\Geo_proyecto\Geo_proyecto\Geo_proyecto\bin\Debug\netstandard2.0\Geo_proyecto.deps.json
+D:\Users\Cumbal\Desktop\Noemi_actual5semestre\xamarin_noga\Transform\Geo_proyecto\Geo_proyecto\Geo_proyecto\bin\Debug\netstandard2.0\Geo_proyecto.dll
+D:\Users\Cumbal\Desktop\Noemi_actual5semestre\xamarin_noga\Transform\Geo_proyecto\Geo_proyecto\Geo_proyecto\bin\Debug\netstandard2.0\Geo_proyecto.pdb
+D:\Users\Cumbal\Desktop\Noemi_actual5semestre\xamarin_noga\Transform\Geo_proyecto\Geo_proyecto\Geo_proyecto\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Users\Cumbal\Desktop\Noemi_actual5semestre\xamarin_noga\Transform\Geo_proyecto\Geo_proyecto\Geo_proyecto\obj\Debug\netstandard2.0\ref\Geo_proyecto.dll

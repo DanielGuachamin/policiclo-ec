@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Geo_proyecto.Noemi">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Coordenadas"/>
+            <Label Text="Latitud  :"/>
+            <Label x:Name="lat"/>
+            <Label Text="Longitud"/>
+            <Label x:Name="log"/>
+            <Button Text="Mostrar Mapa" Clicked="mostrar_mapa"/>
+
+            <Button Text="Regresar"
+                        BackgroundColor="Silver"
+                        CornerRadius="10" Clicked="Button_Regresar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

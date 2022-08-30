@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Geo_proyecto.MainPage"
+
+    >
+    <ScrollView HeightRequest="10990">
+        <StackLayout Orientation="Vertical" BackgroundColor="#1E90FF" HeightRequest="2000">
+            <Label Text="Ciclistas 2022" 
+               FontSize="35"
+               FontAttributes="Bold"
+               Margin="0,15,0,0"
+               HorizontalOptions="CenterAndExpand"/>
+            <Frame VerticalOptions="FillAndExpand" 
+                   Margin="5,10,20,10"
+               CornerRadius="20"
+               HasShadow="False">
+                <StackLayout VerticalOptions="Center" Spacing="2">
+
+                    <Image Source="https://www.sport.es/bicio/wp-content/uploads/2022/05/requisitos-buen-ciclista.jpg" />
+
+
+                    <Label Text="Daniel Cumbal "
+                       FontSize="30"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"/>
+                    <Button Text="Ver Ubicación"
+                        BackgroundColor="Silver"
+                        CornerRadius="10" Clicked="btn_Denisse" />
+                </StackLayout>
+            </Frame>
+           
+
+            <Frame VerticalOptions="FillAndExpand" 
+           Margin="20,10,20,10"
+               CornerRadius="20"
+               HasShadow="False">
+                <StackLayout VerticalOptions="Center" Spacing="2">
+                    <Image Source="https://www.energy-sport.com/wp-content/uploads/2020/10/7-maneras-de-entrenar-como-ciclista-de-alto-rendimiento-11.png" />
+                    <Label Text="Noemi Ganchozo"
+                       FontSize="30"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"/>
+                    <Button Text="Ver Ubicación"
+                        BackgroundColor="Silver"
+                        CornerRadius="10"  Clicked="btn_Noemi"/>
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+
+
+    </ScrollView>
+</ContentPage>
