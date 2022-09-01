@@ -5,7 +5,7 @@
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="AQUI VA INFO DE CICLISTAS DE LA BASE DE DATOS"
+            <Label Text="Revisa la ubicación del resto de ciclistas"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             <Button BackgroundColor="Blue"

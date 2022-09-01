@@ -46,6 +46,12 @@
                                 VerticalOptions="End" />
                         </Grid>
                     </Frame>
+                    <Label Text="Tus Coordenadas"/>
+                    <Label Text="Latitud: "/>
+                    <Label x:Name="lat"/>
+                    <Label Text="Longitud: "/>
+                    <Label x:Name="log"/>
+                    <Button Text="Mostrar Mapa" Clicked="mostrar_mapa"/>
                     <BoxView HeightRequest="3"
                  HorizontalOptions="FillAndExpand"
                  BackgroundColor="Green"></BoxView>

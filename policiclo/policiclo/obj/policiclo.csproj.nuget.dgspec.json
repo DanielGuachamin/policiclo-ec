@@ -44,6 +44,10 @@
               "target": "Package",
               "version": "[3.7.2, )"
             },
+            "FirebaseDatabase.net": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -53,6 +57,14 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"
+            },
+            "Refractored.MvvmHelpers": {
+              "target": "Package",
+              "version": "[1.6.2, )"
+            },
+            "Xam.Plugin.Geolocator": {
+              "target": "Package",
+              "version": "[4.5.0.6, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
