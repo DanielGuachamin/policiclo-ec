@@ -18,6 +18,9 @@ namespace policiclo
         public string WebApiKey = "AIzaSyBLGOVxBDyNc9m75N-8g09KPohWabUBhhk";
         double latin;
         double longi;
+        string ubication;
+
+        Ciclista fireRealtime = new Ciclista();
         public Dashboard()
         {
             InitializeComponent();
@@ -52,6 +55,8 @@ namespace policiclo
             latin = double.Parse(lat.Text);
             log.Text = position.Result.Longitude.ToString();
             longi = double.Parse(log.Text);
+            ubication = lat.Text + ";" + longi;
+
         }
         private void Button_Regresar_Clicked(object sender, EventArgs e)
         {
@@ -72,6 +77,7 @@ namespace policiclo
                 var RefreshedContent = await authProvider.RefreshAuthAsync(savedFirebaseAuth);
                 Preferences.Set("MyFirebaseRefreshToken", JsonConvert.SerializeObject(RefreshedContent));
                 userName.Text = "Bienvenid@ " + savedFirebaseAuth.User.Email;
+                Console.WriteLine("Estoy en el dashboard");
             }
             catch (Exception ex)
             {
@@ -89,6 +95,33 @@ namespace policiclo
         {
             Preferences.Remove("MyFirebaseRefreshToken");
             App.Current.MainPage = new NavigationPage(new MainPage());
+        }
+
+        private void Empezar(object sender, EventArgs e)
+        {
+            Device.StartTimer(TimeSpan.FromSeconds(15), () =>
+            {
+                automatico();
+
+                return true;
+            });
+        }
+
+        private async void automatico()
+        {
+            var savedFirebaseAuth = JsonConvert.DeserializeObject<Firebase.Auth.FirebaseAuth>(Preferences.Get("MyFirebaseRefreshToken", ""));
+            CiclistaModel ciclistaModel = new CiclistaModel();
+            ciclistaModel.Longitud = log.Text;
+            ciclistaModel.Latitud = lat.Text;
+            ciclistaModel.Nombre = savedFirebaseAuth.User.Email;
+            ciclistaModel.Ubication = ubication;
+
+            var data = await fireRealtime.SaveCoordenadas(ciclistaModel);
+            if (!data)
+            {
+                await DisplayAlert("Error", "no se guardo la gps", "ok");
+            }
+
         }
     }
 }

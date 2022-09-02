@@ -51,6 +51,7 @@
                     <Label x:Name="lat"/>
                     <Label Text="Longitud: "/>
                     <Label x:Name="log"/>
+                    <Button Text="Empezar" Clicked="Empezar"/>
                     <Button Text="Mostrar Mapa" Clicked="mostrar_mapa"/>
                     <BoxView HeightRequest="3"
                  HorizontalOptions="FillAndExpand"

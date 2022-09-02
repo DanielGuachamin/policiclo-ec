@@ -2,17 +2,39 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="policiclo.TablaCiclistas"
-             NavigationPage.HasNavigationBar="False">
+             NavigationPage.HasNavigationBar="True">
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Revisa la ubicación del resto de ciclistas"
-                VerticalOptions="CenterAndExpand" 
+                VerticalOptions="StartAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            <Button BackgroundColor="Blue"
-                    TextColor="White"
-                    Text="Volver al Inicio"
-                    Clicked="volverButton_Clicked"
-                    x:Name="volverButton"></Button>
+            <Frame VerticalOptions="FillAndExpand"
+           Margin="20,10,20,10"
+               CornerRadius="20">
+                <ListView x:Name="CiclistaListView" 
+                          ItemsSource="{Binding leer_datos}"
+                          HasUnevenRows="True">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Vertical">
+                                    <StackLayout Orientation="Vertical">
+                                        <Label Text="{Binding Nombre}" FontSize="Medium"/>
+                                        <Label Text="{Binding Latitud}" FontSize="Small"/>
+                                        <Label Text="{Binding Longitud}" FontSize="Small"/>
+                                        <Button Text="Mostrar ubicación"
+                                                Clicked="ShowMapAsync"
+                                                CommandParameter="{Binding Ubication}" />
+                                        <BoxView HeightRequest="3"
+                                                 HorizontalOptions="FillAndExpand"
+                                                 BackgroundColor="Blue"></BoxView>
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
