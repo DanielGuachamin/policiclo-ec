@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "policiclo": {
+      "hosting": {
+        "policiclo": [
+          "policiclo"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "policiclo"
+  }
+}

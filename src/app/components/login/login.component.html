@@ -1,0 +1,33 @@
+
+  <div class="form-container mat-elevation-z5">
+    <h1>Inicio de sesión</h1>
+    <form [formGroup]="loginForm" (ngSubmit)="submit()">
+    <mat-form-field appearance="fill">
+      <mat-label>Correo</mat-label>
+      <input matInput  formControlName="email"/>
+      <mat-error *ngIf="email?.errors?.['required']">
+        Debe ingresar su correo
+      </mat-error>
+      <mat-error *ngIf="email?.errors?.['email']">
+        Por favor ingrese un correo válido
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Contraseña</mat-label>
+      <input matInput  formControlName="password" type="password"/>
+      <mat-error *ngIf="password?.errors?.['required']">
+        Debe ingresar una contraseña
+      </mat-error>
+    </mat-form-field>
+    <div class="center margin-top">
+      <button mat-raised-button color="basic" type="submit">
+        Login
+      </button>
+    </div>
+
+    <span class="center margin-top">¿No tienes una cuenta? <a class="sign-up-link" routerLink="/sign-up">Registrarse</a></span>
+    </form>
+
+  </div>
+
+

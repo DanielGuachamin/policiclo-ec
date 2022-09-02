@@ -1,0 +1,59 @@
+
+  <div class="form-container mat-elevation-z5">
+    <h1>Registro</h1>
+    <form [formGroup]="signUpForm" (ngSubmit)="submit()">
+
+      <mat-form-field appearance="outline">
+        <mat-label>Nombre</mat-label>
+        <input matInput  formControlName="name"/>
+        <mat-error *ngIf="name?.errors?.['required']">
+          Debe ingresar su nombre
+        </mat-error>
+      </mat-form-field>
+
+
+      <mat-form-field appearance="outline">
+        <mat-label>Correo</mat-label>
+        <input matInput  formControlName="email"/>
+        <mat-error *ngIf="email?.errors?.['required']">
+          Debe ingresar su correo
+        </mat-error>
+        <mat-error *ngIf="email?.errors?.['email']">
+          Por favor ingrese un correo válido
+        </mat-error>
+      </mat-form-field>
+
+
+      <mat-form-field appearance="outline">
+        <mat-label>Contraseña</mat-label>
+        <input matInput  formControlName="password" type="password"/>
+        <mat-error *ngIf="password?.errors?.['required']">
+          Debe ingresar una contraseña
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Confirma contraseña</mat-label>
+        <input matInput  formControlName="confirmPassword" type="password"/>
+        <mat-error *ngIf="confirmPassword?.errors?.['required']">
+          Debe confirmar su contraseña
+        </mat-error>
+      </mat-form-field>
+
+      <mat-error *ngIf="signUpForm.errors?.['passwordsDontMatch']">
+        Debe coincidir la contraseña
+      </mat-error>
+
+
+    <div class="center margin-top">
+      <button mat-raised-button color="basic" type="submit">
+        Registrar
+      </button>
+    </div>
+
+  </form>
+
+  </div>
+
+
+
