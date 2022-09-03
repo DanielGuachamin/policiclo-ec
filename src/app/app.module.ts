@@ -21,6 +21,10 @@ import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { HotToastModule } from '@ngneat/hot-toast';
 import {MatMenuModule} from '@angular/material/menu';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+
 
 @NgModule({
   declarations: [
@@ -40,12 +44,15 @@ import {MatMenuModule} from '@angular/material/menu';
     MatInputModule,
     ReactiveFormsModule,
     MatButtonModule,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideAuth(() => getAuth()),
-    provideDatabase(() => getDatabase()),
-    provideFirestore(() => getFirestore()),
+    AngularFireAuthModule,
+    AngularFireModule.initializeApp(environment.firebase),  
+   
+ 
     HotToastModule.forRoot(),
-    MatMenuModule
+    MatMenuModule,
+    AngularFireDatabaseModule,
+
+
 
   ],
   providers: [],

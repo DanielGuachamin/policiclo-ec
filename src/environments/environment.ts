@@ -4,12 +4,14 @@
 
 export const environment = {
   firebase: {
-    projectId: 'policiclo',
-    appId: '1:501649755499:web:5f258c57a055b0494ad02e',
-    storageBucket: 'policiclo.appspot.com',
-    apiKey: 'AIzaSyDV9KfX4UZizGvfwUStTvOK_P10dIY7FMw',
-    authDomain: 'policiclo.firebaseapp.com',
-    messagingSenderId: '501649755499',
+    apiKey: "AIzaSyBLGOVxBDyNc9m75N-8g09KPohWabUBhhk",
+    authDomain: "politrip.firebaseapp.com",
+    databaseURL: "https://politrip-default-rtdb.firebaseio.com",
+    projectId: "politrip",
+    storageBucket: "politrip.appspot.com",
+    messagingSenderId: "39828289178",
+    appId: "1:39828289178:web:7920be6841ead142875123",
+    measurementId: "G-WR0FZG19SG"
   },
   production: false
 };

@@ -1,3 +1,9 @@
 <h1 *ngIf="user$ | async as user">
   Bienvenid@ a Policiclo, {{user.displayName}}!
 </h1>
+<ul class="list-group-item">
+  <li *ngFor="let ciclistas_ecuatorianos of ciclistas; let i = index">
+    {{ciclistas_ecuatorianos.Latitud}}
+  </li>
+
+</ul>

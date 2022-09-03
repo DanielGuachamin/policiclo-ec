@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Auth, authState, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from '@angular/fire/auth';
+import { AngularFireDatabase, AngularFireList } from '@angular/fire/compat/database';
 import { from, switchMap } from 'rxjs';
+import { ciclista } from '../Model/ciclista.model';
 
 @Injectable({
   providedIn: 'root'
@@ -8,8 +10,12 @@ import { from, switchMap } from 'rxjs';
 export class UserService {
 
   currentUser$ = authState(this.auth);
+  private dbciclistas = "/CiclistaModel";
 
-  constructor(private auth: Auth) { }
+ misciclistas : AngularFireList<ciclista>;
+  constructor(private auth: Auth,private db :AngularFireDatabase) { 
+    this.misciclistas=db.list(this.dbciclistas);
+  }
 
   login(username: string, password: string){
     return from(signInWithEmailAndPassword(this.auth, username, password));
@@ -23,4 +29,12 @@ export class UserService {
   logout(){
     return from(this.auth.signOut());
   }
+
+  // read information of  firebase (Realtime)
+  
+  getAll():AngularFireList<ciclista>{
+    return  this.misciclistas;
+      }
+
+
 }
