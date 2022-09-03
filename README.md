@@ -7,7 +7,7 @@
 * Jeremy León
 * Cindy Yazán
 
-El apk para android se encuentra dentro de este enlace → [Apk](https://epnecuador-my.sharepoint.com/:f:/g/personal/jeremy_leon_epn_edu_ec/EvIS9yRTABRPoMVAuEyhxloBa20794oHyM2YKhuck62L7w?e=NB6KaJ)
+<img src="capturesPoli/googleplay.png" alt="googleplay" width="50" height="50"> Descarga la app en Google Play Store → [Play Store](https://play.google.com/store/apps/details?id=com.zeopoxa.fitness.cycling.bike&hl=es_419&gl=US)
 
 ## Acerca del proyecto
 
