@@ -47,16 +47,15 @@ export class LoginComponent implements OnInit {
         const id:string= res.user.uid;
         console.log("id user: ", id)
         //impresión por consola de los datos del usuario registrado
-        console.log("datos usuario", this.userForm.value)
+        console.log("datos usuario", res.user.email)
+        localStorage.setItem('usuario',res.user.email)
         //creario usuario en Firestore
         await this.auth.getObject(id, path).subscribe( res =>{
           this.user = res;
           //localstorage de datos del usuario: id, rol y nombre
-         localStorage.setItem("idUser", this.user.id);
+    
          //visualización de datos usuario
-         console.log("Datos usuario: ",
-         localStorage.getItem("idUser"),
-         )
+     
          this.router.navigate(['/dashboard'])
         })
       }
@@ -75,6 +74,7 @@ export class LoginComponent implements OnInit {
   get emptyemail(){
     return this.userForm.get('mail')?.invalid && this.userForm.get('mail')?.touched
   }
+
   
 
 }

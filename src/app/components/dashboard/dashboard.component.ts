@@ -1,6 +1,9 @@
 import { Component, OnInit, NgZone } from '@angular/core';
+import { map } from 'rxjs';
 import { User } from 'src/app/entities';
 import { AuthserviceService } from 'src/app/services/authservice.service';
+import { ServCiclisService } from 'src/app/services/serv-ciclis.service';
+import { ciclista } from './ciclista.model';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,68 +11,45 @@ import { AuthserviceService } from 'src/app/services/authservice.service';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
+ public ciclistaUsuario:any;
+  // variables
+  ciclistas?:ciclista[]; 
+  persona_ciclista?:ciclista;
+  ciclista_Index=-1;
+  //
   public collectionName="geolocation";
   public Users: User[];
   geo: any;
   constructor(
     private auth: AuthserviceService,
-    private zone: NgZone,) { }
+    private zone: NgZone,
+    private servCiclismo :ServCiclisService) { }
 
   ngOnInit(): void {
-    this.recargaProcess();
-    this.mostrargeo();
-    this.updateGeo();
-    this.showUsers();
+  
+    this. recibirDatos();
+    this.ciclistaUsuario = localStorage.getItem('usuario');
+    
   }
-  showUsers(){
-    this.auth.showUsers().subscribe((res) =>{
-      this.Users = res.map((e) =>{
-        return {
-          id: e.payload.doc.id,
-          ...(e.payload.doc.data() as User)
-        };
-      });
-    });
-  }
+
   logout(){
     
     this.auth.logout();
     
   }
-  reloadPage() { // click handler or similar
-    this.zone.runOutsideAngular(() => {
-        location.reload();
-    });
-  }
-  recargaProcess(){
-    if(localStorage.getItem("recarga")==="true"){
-      console.log("recarga");
-      localStorage.setItem("recarga", "");
-      this.reloadPage();
-    }
-    else{
-      console.log("no recarga")
-    }
-  }
-  mostrargeo(){
-    this.auth.getlocation().then(resp=>{
-      localStorage.setItem("longString", `${resp.long}`);
-      localStorage.setItem("latiString", `${resp.lati}`);
-      
-      console.log("longitud: ", localStorage.getItem("longString"));
-      console.log("latitud: ", localStorage.getItem("latiString"));
+
+  recibirDatos():void{
+    this.servCiclismo.getAll().snapshotChanges().pipe(
+      map(leer=>
+        leer.map(c=>({
+          id:c.payload.key ,...c.payload.val()
+        }))
+        )
+    ).subscribe(data =>{
+      this.ciclistas=data;
     })
-  }
-  async delay(n: number){
-    return new Promise(function(resolve){
-        setTimeout(resolve,n*1000);
-    });
-  }
-  async updateGeo(){
-    await this.delay(15);
-    this.auth.updateGeo();
-    this.ngOnInit();
-  }
+     }
+
 
 
 }

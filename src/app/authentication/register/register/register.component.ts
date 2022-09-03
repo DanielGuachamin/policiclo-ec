@@ -28,14 +28,12 @@ export class RegisterComponent implements OnInit {
       name: ['', Validators.required],
       mail: ['', Validators.required],
       password: new FormControl(this.password, [ Validators.required, Validators.minLength(8), Validators.pattern("^(?=.*[0-9])[a-zA-Z0-9!@#$%^&*]{8,100}$") ]),
-      long: ['',Validators.required],
-      lati: ['',Validators.required],
-      id: null
+    
     })
      }
 
   ngOnInit(): void {
-    this.getGeolocation();
+  
   }
   async register(){
     
@@ -50,13 +48,14 @@ export class RegisterComponent implements OnInit {
     if(res){
       console.log("Registro en FireAuthentication completo");
       const path = "users";
+      alert("Registro con exito");
       //asignación del id de Fireauthentication al id del formulario
       const id= res.user.uid;
       this.userForm.patchValue({id: id});
       //impresión por consola de los datos del usuario registrado
       console.log("datos usuario", this.userForm.value)
       //creario usuario en Firestore
-      this.auth.createUser(this.userForm.value, path);
+      //this.auth.createUser(this.userForm.value, path);
       
       this.auth.getObject(id, path).subscribe( res =>{
         //asignación del usuario
@@ -66,7 +65,7 @@ export class RegisterComponent implements OnInit {
          localStorage.setItem("idUser", this.user.id);
          localStorage.setItem("nameUser", this.user.name);
          //this.auth.createGeo();
-         this.myAsyncFunction(); 
+        // this.myAsyncFunction(); 
       })
       //redireccionar a la vista principal
     }
@@ -83,33 +82,9 @@ export class RegisterComponent implements OnInit {
     await this.delay(2);
     this.router.navigate(['/dashboard'])
   }
-  redirect(){
-    this.router.navigate(['/login']);
-  }
-  async getGeolocation(){
-    this.auth.getlocation().then(resp=>{
-      localStorage.setItem("longString", `${resp.long}`);
-      localStorage.setItem("latiString", `${resp.lati}`);
-      console.log("longitud: ", localStorage.getItem("longString"));
-      console.log("latitud: ", localStorage.getItem("latiString"));
-    })
-    
-    
-  }
-  //create geolocation
-  async setGeolocation (){
-    alert("Obteniendo datos de Geolocalización");
-    await this.delay(1);
-    if(localStorage.getItem("longString")){
-      this.userForm.patchValue({long: localStorage.getItem("longString")});
-      this.userForm.patchValue({lati: localStorage.getItem("latiString")});
-      alert("Datos obtenidos");
-    }
-    else{
-      alert("No fue posible obtener datos de geolocalización");
-    }
-  }
-  //validaciones
+ 
+
+ 
   emptyFields(field: string){
     if (this.userForm.get(field)?.hasError('required')) {
       return 'El campo es obligatorio';
@@ -123,13 +98,13 @@ export class RegisterComponent implements OnInit {
     }
     return this.userForm.get(field)? 'La contraseña debe tener más de 8 caracteres con números y simbolos' : '';
   }
-  get emptyName(){
+  get Name(){
     return this.userForm.get('name')?.invalid && this.userForm.get('name')?.touched
   }
-  get emptyPassword(){
+  get Password(){
     return this.userForm.get('password')?.invalid && this.userForm.get('password')?.touched
   }
-  get emptyemail(){
+  get Email(){
     return this.userForm.get('mail')?.invalid && this.userForm.get('mail')?.touched
   }
 

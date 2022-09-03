@@ -5,13 +5,14 @@
 export const environment = {
   production: false,
   firebaseConfig : {
-    apiKey: "AIzaSyCSYu3KbAkn06LL_cxZsJQr1srvHcXKsHQ",
-    authDomain: "appweb-bcd38.firebaseapp.com",
-    databaseURL: "https://appweb-bcd38-default-rtdb.firebaseio.com",
-    projectId: "appweb-bcd38",
-    storageBucket: "appweb-bcd38.appspot.com",
-    messagingSenderId: "267983699764",
-    appId: "1:267983699764:web:4f788a2ac6374da1086f61"
+    apiKey: "AIzaSyBLGOVxBDyNc9m75N-8g09KPohWabUBhhk",
+    authDomain: "politrip.firebaseapp.com",
+    databaseURL: "https://politrip-default-rtdb.firebaseio.com",
+    projectId: "politrip",
+    storageBucket: "politrip.appspot.com",
+    messagingSenderId: "39828289178",
+    appId: "1:39828289178:web:7920be6841ead142875123",
+    measurementId: "G-WR0FZG19SG"
   }
 };
 

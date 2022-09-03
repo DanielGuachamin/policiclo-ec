@@ -1,0 +1,54 @@
+.navbar-brand{
+  display:contents;
+  width: 100%;
+
+}
+.navbar-brand img{
+  width:90px;
+  height:60px;
+  
+}
+.inicio {
+ text-align: center;
+ align-items: center;
+}
+
+.home{
+    text-decoration: none;
+    color: aliceblue;
+    margin-left: 1%;
+
+    
+  }
+  .home img{
+    
+  border-radius:150px;
+  border:2px solid #666;
+    width:75px;
+  height:70px;
+
+  }
+  .nav-link{
+    color: aliceblue;
+  }
+  .imagen{
+      height: 300px;
+  }
+
+  
+  .top{
+  
+    height: 100vh;
+    width: 90%;
+
+  }
+  .btn{
+    margin: 0%;
+    padding: 0%;
+    height: 49px;
+  }
+
+  .inicio {
+    text-align: center;
+    align-items: center;
+   }
