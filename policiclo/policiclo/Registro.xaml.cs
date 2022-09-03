@@ -25,8 +25,8 @@ namespace policiclo
             {
                 var authProvider = new FirebaseAuthProvider(new FirebaseConfig(WebApiKey));
                 var auth = await authProvider.CreateUserWithEmailAndPasswordAsync(userNewEmail.Text, userNewPassword.Text);
-                string getToken = auth.FirebaseToken;
-                await App.Current.MainPage.DisplayAlert("Alert", "Se ha registrado exitosamente", "OK");
+                await authProvider.UpdateProfileAsync(auth.FirebaseToken, userNewEmail.Text, "");
+                await App.Current.MainPage.DisplayAlert("Alert", "Revise su correo para validar la cuenta", "OK");
             }
             catch (Exception ex)
             {

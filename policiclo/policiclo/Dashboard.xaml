@@ -35,9 +35,9 @@
                                 HeightRequest="60" 
                                 WidthRequest="60" />
                             <Label Grid.Column="1" 
-                                Text="Richard Carapaz" 
-                                FontAttributes="Bold"
-                                LineBreakMode="TailTruncation" />
+                                   x:Name="UserCiclista"
+                                   FontAttributes="Bold"
+                                   LineBreakMode="TailTruncation" />
                             <Label Grid.Row="1"
                                 Grid.Column="1" 
                                 Text="Ciclista profesional"
@@ -55,11 +55,12 @@
                     <Button Text="Mostrar Mapa" Clicked="mostrar_mapa"/>
                     <BoxView HeightRequest="3"
                  HorizontalOptions="FillAndExpand"
-                 BackgroundColor="Green"></BoxView>
+                 BackgroundColor="Gray"></BoxView>
                     <Button Text="Ver ubicación ciclistas"
-                            BackgroundColor="Blue"
+                            BackgroundColor="Orange"
                             TextColor="White"
                             Clicked="verTabla_Clicked"/>
+                    <Image Source="https://i.gifer.com/origin/fd/fd4638442247e11430ff221fea8bede2.gif" IsAnimationPlaying="True"/>
                 </StackLayout>
             </Frame>
             <Button x:Name="salir"
@@ -67,7 +68,6 @@
                     BackgroundColor="Red"
                     TextColor="White"
                     Clicked="cerrarButton_Clicked"/>
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

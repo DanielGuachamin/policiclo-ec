@@ -4,7 +4,7 @@
              x:Class="policiclo.Registro"
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout VerticalOptions="Center">
             <Label Text="Registrate en Ciclo Trip"
                    FontSize="35"
                    FontAttributes="Bold"

@@ -24,10 +24,24 @@ namespace policiclo
             try
             {
                 var auth = await authProvider.SignInWithEmailAndPasswordAsync(UserLoginEmail.Text, UserLoginPassword.Text);
-                var content = await auth.GetFreshAuthAsync();
-                var serializedContent = JsonConvert.SerializeObject(content);
-                Preferences.Set("MyFirebaseRefreshToken", serializedContent);
-                await Navigation.PushAsync(new Dashboard());
+                var link = await auth.LinkToAsync(UserLoginEmail.Text, UserLoginPassword.Text);
+                if(link.User.IsEmailVerified == false)
+                {
+                    var action = await App.Current.MainPage.DisplayAlert("Alert", "Tu correo no se ha activado correctamente ¿Deseas activarlo?", "Si", "No");
+
+                    if (action)
+                    {
+                        await authProvider.SendEmailVerificationAsync(link.FirebaseToken);
+                    }
+                }
+                else
+                {
+                    var content = await auth.GetFreshAuthAsync();
+                    var serializedContent = JsonConvert.SerializeObject(content);
+                    Preferences.Set("MyFirebaseRefreshToken", serializedContent);
+                    await Navigation.PushAsync(new Dashboard());
+                }
+                
             }
             catch
             {
@@ -38,6 +52,11 @@ namespace policiclo
         async void openRegister_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Registro());
+        }
+
+        async void openRecuperar_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new RecuperarContra());
         }
     }
 }

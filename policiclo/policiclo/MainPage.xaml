@@ -20,7 +20,8 @@
                 <Entry Placeholder="Ingresa correo"
                x:Name="UserLoginEmail"></Entry>
                 <Entry Placeholder="Ingrese contraseña"
-               x:Name="UserLoginPassword"></Entry>
+               x:Name="UserLoginPassword"
+                       IsPassword="True"></Entry>
                 <Button BackgroundColor="Black"
                 Clicked="inicioButton_Clicked"
                 TextColor="White"
@@ -33,6 +34,13 @@
                         BackgroundColor="Blue"
                         TextColor="White"
                         Clicked="openRegister_Clicked"/>
+                <BoxView HeightRequest="3"
+                 HorizontalOptions="FillAndExpand"
+                 BackgroundColor="DarkOrange"></BoxView>
+                <Button Text="Recuperar contraseña"
+                        BackgroundColor="Green"
+                        TextColor="White"
+                        Clicked="openRecuperar_Clicked"/>
             </StackLayout>
         </Frame>
     </StackLayout>

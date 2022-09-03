@@ -683,8 +683,6 @@ C:\Users\HOME\source\repos\policiclo\policiclo\policiclo.Android\obj\Debug\120\a
 C:\Users\HOME\source\repos\policiclo\policiclo\policiclo.Android\obj\Debug\120\android\assets\MvvmHelpers.pdb
 C:\Users\HOME\source\repos\policiclo\policiclo\policiclo.Android\obj\Debug\120\android\assets\System.Reactive.dll
 C:\Users\HOME\source\repos\policiclo\policiclo\policiclo.Android\obj\Debug\120\android\assets\System.Runtime.InteropServices.WindowsRuntime.dll
-C:\Users\HOME\source\repos\policiclo\policiclo\policiclo.Android\obj\Debug\120\androidx\jl\90122200-3542-4ac8-8f28-2f489128f8d0.jar
-C:\Users\HOME\source\repos\policiclo\policiclo\policiclo.Android\obj\Debug\120\androidx\proguard\2551560d-6213-4937-b838-2a7f93aa080d.cfg
 D:\Users\Cumbal\Desktop\Noemi_actual5semestre\xamarin_noga\Proyecto_final_moviles\policiclo-ec\policiclo\policiclo.Android\bin\Debug\policiclo.Android.dll
 D:\Users\Cumbal\Desktop\Noemi_actual5semestre\xamarin_noga\Proyecto_final_moviles\policiclo-ec\policiclo\policiclo.Android\bin\Debug\policiclo.Android.pdb
 D:\Users\Cumbal\Desktop\Noemi_actual5semestre\xamarin_noga\Proyecto_final_moviles\policiclo-ec\policiclo\policiclo.Android\bin\Debug\com.companyname.policiclo.apk
@@ -950,3 +948,5 @@ D:\Users\Cumbal\Desktop\Noemi_actual5semestre\xamarin_noga\Proyecto_final_movile
 D:\Users\Cumbal\Desktop\Noemi_actual5semestre\xamarin_noga\Proyecto_final_moviles\policiclo-ec\policiclo\policiclo.Android\obj\Debug\120\stamp\_AndroidXJetifyProguardRules.stamp
 D:\Users\Cumbal\Desktop\Noemi_actual5semestre\xamarin_noga\Proyecto_final_moviles\policiclo-ec\policiclo\policiclo.Android\obj\Debug\120\androidx\_AndroidXJetifyProguardRules.jetify
 D:\Users\Cumbal\Desktop\Noemi_actual5semestre\xamarin_noga\Proyecto_final_moviles\policiclo-ec\policiclo\policiclo.Android\obj\Debug\120\stamp\_AndroidXCecilfy.stamp
+C:\Users\HOME\source\repos\policiclo\policiclo\policiclo.Android\obj\Debug\120\androidx\jl\8f65e601-ae24-41d7-ab1a-9d398d64a188.jar
+C:\Users\HOME\source\repos\policiclo\policiclo\policiclo.Android\obj\Debug\120\androidx\proguard\c8c02717-4568-49fa-a8ff-afe89411cccb.cfg

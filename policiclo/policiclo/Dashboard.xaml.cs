@@ -76,8 +76,8 @@ namespace policiclo
                 var savedFirebaseAuth = JsonConvert.DeserializeObject<Firebase.Auth.FirebaseAuth>(Preferences.Get("MyFirebaseRefreshToken", ""));
                 var RefreshedContent = await authProvider.RefreshAuthAsync(savedFirebaseAuth);
                 Preferences.Set("MyFirebaseRefreshToken", JsonConvert.SerializeObject(RefreshedContent));
-                userName.Text = "Bienvenid@ " + savedFirebaseAuth.User.Email;
-                Console.WriteLine("Estoy en el dashboard");
+                userName.Text = "Bienvenid@ a CicloPoli";
+                UserCiclista.Text = savedFirebaseAuth.User.Email;
             }
             catch (Exception ex)
             {
