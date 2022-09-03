@@ -33,7 +33,6 @@ public class MonoPackageManager_Resources {
 		"Plugin.CurrentActivity.dll",
 		"Plugin.Geolocator.dll",
 		"Plugin.Permissions.dll",
-		"policiclo.dll",
 		"System.Reactive.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.SavedState.dll",
@@ -43,6 +42,7 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
 		"Xamarin.Google.Guava.ListenableFuture.dll",
+		"policiclo.dll",
 	};
 	public static String[] Dependencies = new String[]{
 	};

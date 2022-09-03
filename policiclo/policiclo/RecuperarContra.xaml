@@ -9,12 +9,14 @@
                    Text="Cambiar/Recuperar Contraseña"
                    FontSize="30"
                    FontAttributes="Bold"
-                   TextColor="DarkOrange"
+                   TextColor="Black"
                    VerticalOptions="Center" 
                     />
             <Frame>
                 <StackLayout>
-                    <Entry Placeholder="Ingrese su correo"
+                    <Entry Placeholder="Ingrese su correo"                                              PlaceholderColor="#979292"
+
+                           TextColor="Black"
                    x:Name="TxtCorreo"/>
                     <Button Text="Recuperar contraseña"
                     x:Name="RecoverButton"

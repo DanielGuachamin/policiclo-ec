@@ -1,34 +1,75 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:policiclo.CustomeRenderer"
              x:Class="policiclo.Registro"
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center">
-            <Label Text="Registrate en Ciclo Trip"
-                   FontSize="35"
-                   FontAttributes="Bold"
-                   HorizontalOptions="Center"
-                   TextColor="DarkOrange"/>
+           
             <Frame Margin="10">
+
                 <StackLayout >
-                    <Entry Placeholder="Ingresa nuevo correo"
-                   x:Name="userNewEmail"></Entry>
-                    <Entry Placeholder="Ingresa nueva contraseña"
-                   x:Name="userNewPassword"></Entry>
+                <Label Text="REGISTRATE" TextColor="Black" FontSize="35" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" />
+                    <StackLayout Margin="0,25,0,0">
+                        <Frame BackgroundColor="Transparent" Padding="0" Margin="0" BorderColor="DarkGray" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                            <StackLayout Orientation="Horizontal">
+                                <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="35" WidthRequest="35" Padding="0" HorizontalOptions="Start" Margin="7">
+                                    <Image Source="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" Aspect="AspectFill" Margin="0" />
+                                </Frame>
+                                <local:MyCustomeEntry
+                                             Placeholder="Ingresa correo"
+                                             x:Name="userNewEmail"
+                                            HorizontalOptions="FillAndExpand"
+                                             PlaceholderColor="#979292"
+                                             TextColor="black"
+                                            Margin="0,0,15,0"
+                                            MaxLength="50"
+                                            ClearButtonVisibility="WhileEditing"
+                                        />
+                            </StackLayout>
+                        </Frame>
+                        <Frame BackgroundColor="Transparent" Padding="0" Margin="0,20,0,0" BorderColor="DarkGray" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                            <StackLayout Orientation="Horizontal">
+                                <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="35" WidthRequest="35" Padding="0" HorizontalOptions="Start" Margin="7">
+                                    <Image Source="https://cdn-icons-png.flaticon.com/512/421/421648.png" Aspect="AspectFill" Margin="0" />
+
+                                </Frame>
+                                <local:MyCustomeEntry
+                                            Placeholder="Ingresa contraseña"
+                                            x:Name="userNewPassword"
+                                            IsPassword="True" 
+                                            HorizontalOptions="FillAndExpand"
+                                            PlaceholderColor="#979292"
+                                            TextColor="black"
+                                            Margin="0,0,15,0"
+                                            />
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
                     <Button BackgroundColor="Black"
                     TextColor="White"
                     Text="Registrarse"
                     Clicked="registrarButton_Clicked"
-                    x:Name="registroButton"></Button>
-                    <BoxView HeightRequest="3"
-                 HorizontalOptions="FillAndExpand"
-                 BackgroundColor="Green"></BoxView>
-                    <Button BackgroundColor="Blue"
-                    TextColor="White"
-                    Text="Volver al Inicio"
-                    Clicked="volverButton_Clicked"
-                    x:Name="volverButton"></Button>
+                    CornerRadius="20"
+                    x:Name="registroButton"
+                      Margin="10"
+                            >
+                        
+                    </Button>
+ 
+
+                 
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="10">
+                        <Label Text="¿Ya tienes una cuenta?" HorizontalTextAlignment="Center" TextColor="DarkGray"/>
+                        <Label Text="Inicia sesión" HorizontalTextAlignment="Center" TextColor="Chocolate" TextDecorations="Underline"  VerticalTextAlignment="Center" FontAttributes="Bold">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="volverButton_Clicked"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+
+
+                    </StackLayout>
+               
                 </StackLayout>
             </Frame>
         </StackLayout>

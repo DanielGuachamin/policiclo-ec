@@ -17,24 +17,20 @@ namespace policiclo {
     public partial class Registro : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Entry userNewEmail;
+        private global::policiclo.CustomeRenderer.MyCustomeEntry userNewEmail;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Entry userNewPassword;
+        private global::policiclo.CustomeRenderer.MyCustomeEntry userNewPassword;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.Button registroButton;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Button volverButton;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Registro));
-            userNewEmail = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "userNewEmail");
-            userNewPassword = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "userNewPassword");
+            userNewEmail = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::policiclo.CustomeRenderer.MyCustomeEntry>(this, "userNewEmail");
+            userNewPassword = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::policiclo.CustomeRenderer.MyCustomeEntry>(this, "userNewPassword");
             registroButton = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "registroButton");
-            volverButton = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "volverButton");
         }
     }
 }

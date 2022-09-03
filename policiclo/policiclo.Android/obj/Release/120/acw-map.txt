@@ -1090,3 +1090,6 @@ com.google.common.util.concurrent.ListenableFuture;com.google.common.util.concur
 policiclo.Droid.MainActivity, policiclo.Android;crc642b4c901f367a942c.MainActivity
 policiclo.Droid.MainActivity;crc642b4c901f367a942c.MainActivity
 policiclo.droid.MainActivity;crc642b4c901f367a942c.MainActivity
+policiclo.Droid.CustomRenderer.MyEntryRenderer, policiclo.Android;crc64f40d45af4f45035b.MyEntryRenderer
+policiclo.Droid.CustomRenderer.MyEntryRenderer;crc64f40d45af4f45035b.MyEntryRenderer
+policiclo.droid.customrenderer.MyEntryRenderer;crc64f40d45af4f45035b.MyEntryRenderer

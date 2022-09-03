@@ -17,10 +17,10 @@ namespace policiclo {
     public partial class MainPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Entry UserLoginEmail;
+        private global::policiclo.CustomeRenderer.MyCustomeEntry UserLoginEmail;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Entry UserLoginPassword;
+        private global::policiclo.CustomeRenderer.MyCustomeEntry UserLoginPassword;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.Button iniciobutton;
@@ -28,8 +28,8 @@ namespace policiclo {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MainPage));
-            UserLoginEmail = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "UserLoginEmail");
-            UserLoginPassword = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "UserLoginPassword");
+            UserLoginEmail = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::policiclo.CustomeRenderer.MyCustomeEntry>(this, "UserLoginEmail");
+            UserLoginPassword = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::policiclo.CustomeRenderer.MyCustomeEntry>(this, "UserLoginPassword");
             iniciobutton = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "iniciobutton");
         }
     }

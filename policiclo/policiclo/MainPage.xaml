@@ -1,48 +1,96 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:policiclo.CustomeRenderer"
              x:Class="policiclo.MainPage"
-             BackgroundImageSource="carapaz1.jpg"
-             NavigationPage.HasNavigationBar="False">
-
-    <StackLayout>
-        <Label Text="Bienvenid@ a Ciclo Trip"
-               FontSize="30"
-               FontAttributes="Bold"
-               HorizontalOptions="Center"
-               TextColor="DarkOrange"></Label>
-        <BoxView HeightRequest="3"
-                 HorizontalOptions="FillAndExpand"
-                 BackgroundColor="Green"></BoxView>
-        <Frame VerticalOptions="EndAndExpand"
-               Margin="15">
-            <StackLayout>
-                <Entry Placeholder="Ingresa correo"
-               x:Name="UserLoginEmail"></Entry>
-                <Entry Placeholder="Ingrese contraseña"
-               x:Name="UserLoginPassword"
-                       IsPassword="True"></Entry>
-                <Button BackgroundColor="Black"
-                Clicked="inicioButton_Clicked"
-                TextColor="White"
-                Text="Iniciar sesión"
-                x:Name="iniciobutton"></Button>
-                <BoxView HeightRequest="3"
-                 HorizontalOptions="FillAndExpand"
-                 BackgroundColor="Green"></BoxView>
-                <Button Text="Registro"
-                        BackgroundColor="Blue"
-                        TextColor="White"
-                        Clicked="openRegister_Clicked"/>
-                <BoxView HeightRequest="3"
-                 HorizontalOptions="FillAndExpand"
-                 BackgroundColor="DarkOrange"></BoxView>
-                <Button Text="Recuperar contraseña"
-                        BackgroundColor="Green"
-                        TextColor="White"
-                        Clicked="openRecuperar_Clicked"/>
+             NavigationPage.HasNavigationBar="False"
+             >
+        <StackLayout Padding="0">
+        <Grid>
+            <StackLayout Padding="0" Margin="0">
+                    <Frame BackgroundColor="LightPink" HeightRequest="250"  HorizontalOptions="FillAndExpand" Padding="0">
+                    <Image Source="https://images.pexels.com/photos/38296/cycling-bicycle-riding-sport-38296.jpeg" Aspect="AspectFill" Margin="0" />
+                </Frame>
             </StackLayout>
-        </Frame>
-    </StackLayout>
+            <StackLayout Margin="15,110,15,0">
+                    <Frame BackgroundColor="White" HasShadow="True" HeightRequest="450"  HorizontalOptions="FillAndExpand">
+                        <StackLayout>
+                            
+                      
+                        <StackLayout HorizontalOptions="CenterAndExpand">
+                            <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="100" WidthRequest="100" Padding="0" HorizontalOptions="Start" Margin="7">
+                                <Image Source="logoCicloTrip.png" Aspect="AspectFill" Margin="0" />
+                            </Frame>
+                            <Label Text="BIENVENID@" TextColor="Black" FontSize="Medium" FontAttributes="Bold"/>
+                        </StackLayout>
+                        <StackLayout Margin="0,25,0,0">
+                                <Frame BackgroundColor="Transparent" Padding="0" Margin="0" BorderColor="DarkGray" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="35" WidthRequest="35" Padding="0" HorizontalOptions="Start" Margin="7">
+                                            <Image Source="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" Aspect="AspectFill" Margin="0" />
+                                        </Frame>
+                                        <local:MyCustomeEntry
+                                             Placeholder="Ingresa correo"
+                                             x:Name="UserLoginEmail"
+                                            HorizontalOptions="FillAndExpand"
+                                             PlaceholderColor="#979292"
+                                             TextColor="black"
+                                            Margin="0,0,15,0"
+                                            MaxLength="50"
+                                            ClearButtonVisibility="WhileEditing"
+                                        />
+                                    </StackLayout>
+                                </Frame>
+                            <Frame BackgroundColor="Transparent" Padding="0" Margin="0,20,0,0" BorderColor="DarkGray" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="35" WidthRequest="35" Padding="0" HorizontalOptions="Start" Margin="7">
+                                            <Image Source="https://cdn-icons-png.flaticon.com/512/421/421648.png" Aspect="AspectFill" Margin="0" />
+                                            
+                                        </Frame>
+                                        <local:MyCustomeEntry
+                                            Placeholder="Ingresa contraseña"
+                                            x:Name="UserLoginPassword"
+                                            IsPassword="True" 
+                                            HorizontalOptions="FillAndExpand"
+                                            PlaceholderColor="#979292"
+                                            TextColor="black"
+                                            Margin="0,0,15,0"
+                                            />
+                                    </StackLayout>
+                                </Frame>
+                        </StackLayout>
+                            <StackLayout Orientation="Horizontal" Margin="10">
+                                <Label Text="¿Olvidaste tu contraseña?" HorizontalTextAlignment="Center" TextColor="Chocolate" TextDecorations="Underline" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" FontAttributes="Bold">
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="openRecuperar_Clicked"/>
+                                    </Label.GestureRecognizers>
+                                </Label>
+                            </StackLayout>
+                            <Button 
+                                BackgroundColor="Black"
+                                Clicked="inicioButton_Clicked"
+                                TextColor="White"
+                                Text="Iniciar sesión"
+                                x:Name="iniciobutton"
+                                CornerRadius="20"
+                            />
 
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="10">
+                                <Label Text="Aún no tienes una cuenta" HorizontalTextAlignment="Center" TextColor="DarkGray"/>
+                            <Label Text="Registrate" HorizontalTextAlignment="Center" TextColor="Chocolate" TextDecorations="Underline"  VerticalTextAlignment="Center" FontAttributes="Bold">
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="openRegister_Clicked"/>
+                                    </Label.GestureRecognizers>
+                                </Label>
+                              
+
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+
+
+                </StackLayout>
+        </Grid>
+    </StackLayout>
 </ContentPage>

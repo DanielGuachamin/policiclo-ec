@@ -19,7 +19,7 @@ map_module_count:
 	.global	java_type_count
 	.p2align	2
 java_type_count:
-	.word	1075
+	.word	1076
 	.size	java_type_count, 4
 	// java_type_count: END
 
@@ -287,23 +287,23 @@ map_modules:
 	.zero	4
 	.xword	0x0	// java_map
 
-	.byte	0xd9, 0x85, 0xab, 0x22, 0xc, 0xc4, 0x39, 0x47, 0xb6, 0xfe, 0xc7, 0xac, 0x6c, 0xfd, 0x2, 0x2e	// module_uuid: 22ab85d9-c40c-4739-b6fe-c7ac6cfd022e
-	.word	0x1	// entry_count
-	.word	0x1	// duplicate_count
+	.byte	0xc1, 0xd9, 0x2c, 0x1c, 0xa3, 0xb6, 0x8d, 0x43, 0xae, 0x9b, 0x5e, 0x5, 0x26, 0x9, 0x71, 0x38	// module_uuid: 1c2cd9c1-b6a3-438d-ae9b-5e0526097138
+	.word	0x2	// entry_count
+	.word	0x0	// duplicate_count
 	.xword	.L.module22_managed_to_java	// map
-	.xword	.L.module22_managed_to_java_duplicates	// duplicate_map
-	.xword	map_aname.22	// assembly_name: Xamarin.Google.Guava.ListenableFuture
+	.xword	0	// duplicate_map
+	.xword	map_aname.22	// assembly_name: policiclo.Android
 	.xword	0x0	// image
 	.word	0x0	// java_name_width
 	.zero	4
 	.xword	0x0	// java_map
 
-	.byte	0xda, 0xf7, 0x8a, 0x86, 0x5c, 0xd6, 0x22, 0x4d, 0xa8, 0x72, 0xc8, 0x5f, 0xd2, 0x54, 0xcc, 0x85	// module_uuid: 868af7da-d65c-4d22-a872-c85fd254cc85
+	.byte	0xd9, 0x85, 0xab, 0x22, 0xc, 0xc4, 0x39, 0x47, 0xb6, 0xfe, 0xc7, 0xac, 0x6c, 0xfd, 0x2, 0x2e	// module_uuid: 22ab85d9-c40c-4739-b6fe-c7ac6cfd022e
 	.word	0x1	// entry_count
-	.word	0x0	// duplicate_count
+	.word	0x1	// duplicate_count
 	.xword	.L.module23_managed_to_java	// map
-	.xword	0	// duplicate_map
-	.xword	map_aname.23	// assembly_name: policiclo.Android
+	.xword	.L.module23_managed_to_java_duplicates	// duplicate_map
+	.xword	map_aname.23	// assembly_name: Xamarin.Google.Guava.ListenableFuture
 	.xword	0x0	// image
 	.word	0x0	// java_name_width
 	.zero	4
@@ -4150,7 +4150,7 @@ map_java:
 	.zero	51	// byteCount == 50; fixedWidth == 101; returned size == 101
 	.zero	3
 
-	.word	0x16	// module_index
+	.word	0x17	// module_index
 	.word	0x0	// type_token_id
 	.ascii	"com/google/common/util/concurrent/ListenableFuture"	// java_name
 	.zero	51	// byteCount == 50; fixedWidth == 101; returned size == 101
@@ -4180,7 +4180,7 @@ map_java:
 	.zero	51	// byteCount == 50; fixedWidth == 101; returned size == 101
 	.zero	3
 
-	.word	0x17	// module_index
+	.word	0x16	// module_index
 	.word	0x2000002	// type_token_id
 	.ascii	"crc642b4c901f367a942c/MainActivity"	// java_name
 	.zero	67	// byteCount == 34; fixedWidth == 101; returned size == 101
@@ -5590,6 +5590,12 @@ map_java:
 	.zero	66	// byteCount == 35; fixedWidth == 101; returned size == 101
 	.zero	3
 
+	.word	0x16	// module_index
+	.word	0x2000004	// type_token_id
+	.ascii	"crc64f40d45af4f45035b/MyEntryRenderer"	// java_name
+	.zero	64	// byteCount == 37; fixedWidth == 101; returned size == 101
+	.zero	3
+
 	.word	0xf	// module_index
 	.word	0x0	// type_token_id
 	.ascii	"java/io/Closeable"	// java_name
@@ -6814,7 +6820,7 @@ map_java:
 	.zero	55	// byteCount == 46; fixedWidth == 101; returned size == 101
 	.zero	3
 
-	.size	map_java, 120400
+	.size	map_java, 120512
 	// Java to managed map: END
 
 	.ident	"Xamarin.Android remotes/origin/d17-2 @ 4e061b739747f624ccb03c98940d8900548a98ad"

@@ -112,13 +112,13 @@ map_aname.21:
 
 	.type	map_aname.22, %object
 map_aname.22:
-	.asciz	"Xamarin.Google.Guava.ListenableFuture"
-	.size	map_aname.22, 38
+	.asciz	"policiclo.Android"
+	.size	map_aname.22, 18
 
 	.type	map_aname.23, %object
 map_aname.23:
-	.asciz	"policiclo.Android"
-	.size	map_aname.23, 18
+	.asciz	"Xamarin.Google.Guava.ListenableFuture"
+	.size	map_aname.23, 38
 
 	.type	map_aname.24, %object
 map_aname.24:
