@@ -32,7 +32,7 @@ El registro de un usuario nuevo es a través de correo electrónico y contraseñ
 Al realizar el registro en la aplicación móvil esta envía un correo de verificación para activar la cuenta creada.
 
 <div align="center">
-    <img src="capturesPoli/correoCuenta.png" alt="Registro" width="570" height="400">
+    <img src="capturesPoli/correoCuenta.png" alt="Registro" width="550" height="400">
 </div>
 
 ### Recuperar Contraseña
@@ -48,7 +48,7 @@ La aplicación cuenta con la opción de recuperar contraseña por medio del corr
 </div>
 
 <div align="center">
-    <img src="capturesPoli/correoRecover.jpeg" alt="CorreoRecover" width="570" height="400">
+    <img src="capturesPoli/correoRecover.jpeg" alt="CorreoRecover" width="550" height="400">
 </div>
 
 ### Pantalla Principal (Dashboard)
