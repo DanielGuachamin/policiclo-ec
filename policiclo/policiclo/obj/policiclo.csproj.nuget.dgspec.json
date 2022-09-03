@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HOME\\source\\repos\\policiclo\\policiclo\\policiclo\\policiclo.csproj": {}
+    "D:\\Users\\Cumbal\\Desktop\\Noemi_actual5semestre\\xamarin_noga\\Proyecto_final_moviles\\policiclo-ec\\policiclo\\policiclo\\policiclo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HOME\\source\\repos\\policiclo\\policiclo\\policiclo\\policiclo.csproj": {
+    "D:\\Users\\Cumbal\\Desktop\\Noemi_actual5semestre\\xamarin_noga\\Proyecto_final_moviles\\policiclo-ec\\policiclo\\policiclo\\policiclo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HOME\\source\\repos\\policiclo\\policiclo\\policiclo\\policiclo.csproj",
+        "projectUniqueName": "D:\\Users\\Cumbal\\Desktop\\Noemi_actual5semestre\\xamarin_noga\\Proyecto_final_moviles\\policiclo-ec\\policiclo\\policiclo\\policiclo.csproj",
         "projectName": "policiclo",
-        "projectPath": "C:\\Users\\HOME\\source\\repos\\policiclo\\policiclo\\policiclo\\policiclo.csproj",
-        "packagesPath": "C:\\Users\\HOME\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HOME\\source\\repos\\policiclo\\policiclo\\policiclo\\obj\\",
+        "projectPath": "D:\\Users\\Cumbal\\Desktop\\Noemi_actual5semestre\\xamarin_noga\\Proyecto_final_moviles\\policiclo-ec\\policiclo\\policiclo\\policiclo.csproj",
+        "packagesPath": "C:\\Users\\CUMBAL\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\Cumbal\\Desktop\\Noemi_actual5semestre\\xamarin_noga\\Proyecto_final_moviles\\policiclo-ec\\policiclo\\policiclo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\HOME\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CUMBAL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -85,7 +85,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
