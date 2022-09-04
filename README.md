@@ -81,6 +81,22 @@ Una vez con los permisos se puede ver la ubicación de los ciclistas en una pant
 
 A continuación, se puede ver la aplicación web con la información de la app móvil.
 
+<div align="center">
+    <img src="capturesPoli/inicioWeb.png" alt="UbicacionOtrosCicli" width="650" height="400">
+</div>
+
+<div align="center">
+    <img src="capturesPoli/registroWeb.png" alt="UbicacionOtrosCicli" width="650" height="400">
+</div>
+
+<div align="center">
+    <img src="capturesPoli/dashboardWeb.png" alt="UbicacionOtrosCicli" width="650" height="400">
+</div>
+
+<div align="center">
+    <img src="capturesPoli/ubiCiclistaWeb.png" alt="UbicacionOtrosCicli" width="650" height="400">
+</div>
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Herramientas App Móvil
@@ -129,7 +145,7 @@ También contamos con un video que explica la funcionalidad de las aplicaciones
 
 Puedes visitar la aplicación web dirigiendote al siguinete enlace
 
-* [Sitio Web](https://ionicimagen-358b2.web.app/)
+* [Sitio Web](https://ciclotrip-appweb.netlify.app/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
