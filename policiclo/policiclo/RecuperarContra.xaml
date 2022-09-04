@@ -5,15 +5,17 @@
     <ContentPage.Content>
         <StackLayout Padding="15"
                      VerticalOptions="Center">
-            <Label HorizontalOptions="CenterAndExpand"
+            
+            <Frame>
+                <StackLayout>
+                    <Label HorizontalOptions="CenterAndExpand"
                    Text="Cambiar/Recuperar Contraseña"
                    FontSize="30"
                    FontAttributes="Bold"
                    TextColor="Black"
+                           HorizontalTextAlignment="Center"
                    VerticalOptions="Center" 
                     />
-            <Frame>
-                <StackLayout>
                     <Entry Placeholder="Ingrese su correo"                                              PlaceholderColor="#979292"
 
                            TextColor="Black"

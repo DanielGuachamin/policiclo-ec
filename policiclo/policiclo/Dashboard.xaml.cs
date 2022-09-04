@@ -76,7 +76,7 @@ namespace policiclo
                 var savedFirebaseAuth = JsonConvert.DeserializeObject<Firebase.Auth.FirebaseAuth>(Preferences.Get("MyFirebaseRefreshToken", ""));
                 var RefreshedContent = await authProvider.RefreshAuthAsync(savedFirebaseAuth);
                 Preferences.Set("MyFirebaseRefreshToken", JsonConvert.SerializeObject(RefreshedContent));
-                userName.Text = "Bienvenid@ a CicloPoli";
+                userName.Text = "Bienvenid@ a CICLO TRIP";
                 UserCiclista.Text = savedFirebaseAuth.User.Email;
             }
             catch (Exception ex)
@@ -97,14 +97,22 @@ namespace policiclo
             App.Current.MainPage = new NavigationPage(new MainPage());
         }
 
-        private void Empezar(object sender, EventArgs e)
+        private async void Empezar(object sender, EventArgs e)
         {
+            var LocationS = await NewMethod();
+            
             Device.StartTimer(TimeSpan.FromSeconds(15), () =>
             {
+                System.Diagnostics.Debug.WriteLine(LocationS);
                 automatico();
 
                 return true;
             });
+        }
+
+        private static Task<PermissionStatus> NewMethod()
+        {
+            return Permissions.RequestAsync<Permissions.LocationAlways>();
         }
 
         private async void automatico()

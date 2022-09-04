@@ -54,7 +54,7 @@
 	.zero	3
 	.long	.L.compressed_assembly_data.4	@ data
 
-	.long	0x230c00	@ uncompressed_file_size
+	.long	0x230e00	@ uncompressed_file_size
 	.byte	0x0	@ loaded
 	.zero	3
 	.long	.L.compressed_assembly_data.5	@ data
@@ -239,7 +239,7 @@
 	.zero	3
 	.long	.L.compressed_assembly_data.41	@ data
 
-	.long	0x7000	@ uncompressed_file_size
+	.long	0x9200	@ uncompressed_file_size
 	.byte	0x0	@ loaded
 	.zero	3
 	.long	.L.compressed_assembly_data.42	@ data
@@ -284,7 +284,7 @@
 	.zero	3
 	.long	.L.compressed_assembly_data.50	@ data
 
-	.long	0xbe00	@ uncompressed_file_size
+	.long	0xc000	@ uncompressed_file_size
 	.byte	0x0	@ loaded
 	.zero	3
 	.long	.L.compressed_assembly_data.51	@ data

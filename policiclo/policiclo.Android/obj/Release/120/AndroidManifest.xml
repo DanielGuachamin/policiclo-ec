@@ -6,7 +6,7 @@
     the contents are regenerated.
     -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.policiclo" android:installLocation="auto">
-  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="31" />
+  <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="30" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -16,7 +16,7 @@
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-feature android:name="android.hardware.location.gps" />
   <uses-feature android:name="android.hardware.location.network" />
-  <application android:label="policiclo.Android" android:theme="@style/MainTheme" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:extractNativeLibs="true">
+  <application android:label="CICLO TRIP" android:theme="@style/MainTheme" android:icon="@drawable/logociclotrip" android:name="android.app.Application" android:allowBackup="true" android:extractNativeLibs="true">
     <receiver android:enabled="true" android:exported="false" android:name="crc643f46942d9dd1fff9.PowerSaveModeBroadcastReceiver" />
     <activity android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/icon" android:label="CICLO TRIP" android:theme="@style/MainTheme" android:name="crc642b4c901f367a942c.MainActivity" android:exported="true">
       <intent-filter>

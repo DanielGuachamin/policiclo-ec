@@ -1637,5 +1637,5 @@ C:\Users\jerem\Desktop\UNIVERSIDAD\QUINTO_SEMESTRE\DESAPPMOV\CICLOTRIP\policiclo
 C:\Users\jerem\Desktop\UNIVERSIDAD\QUINTO_SEMESTRE\DESAPPMOV\CICLOTRIP\policiclo\policiclo.Android\obj\Debug\120\stamp\_GenerateJavaStubs.stamp
 C:\Users\jerem\Desktop\UNIVERSIDAD\QUINTO_SEMESTRE\DESAPPMOV\CICLOTRIP\policiclo\policiclo.Android\obj\Debug\120\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\jerem\Desktop\UNIVERSIDAD\QUINTO_SEMESTRE\DESAPPMOV\CICLOTRIP\policiclo\policiclo.Android\obj\Debug\120\stamp\_ResolveLibraryProjectImports.stamp
-C:\Users\jerem\Desktop\UNIVERSIDAD\QUINTO_SEMESTRE\DESAPPMOV\CICLOTRIP\policiclo\policiclo.Android\obj\Debug\120\androidx\jl\ac18c79f-e5bf-44ea-8501-903d366bd63d.jar
-C:\Users\jerem\Desktop\UNIVERSIDAD\QUINTO_SEMESTRE\DESAPPMOV\CICLOTRIP\policiclo\policiclo.Android\obj\Debug\120\androidx\proguard\1a18ad86-73d4-4e15-ae6c-156a2d6353ad.cfg
+C:\Users\jerem\Desktop\UNIVERSIDAD\QUINTO_SEMESTRE\DESAPPMOV\CICLOTRIP\policiclo\policiclo.Android\obj\Debug\120\androidx\jl\f7c34420-ea1e-4989-bcaf-d2fe21a56b40.jar
+C:\Users\jerem\Desktop\UNIVERSIDAD\QUINTO_SEMESTRE\DESAPPMOV\CICLOTRIP\policiclo\policiclo.Android\obj\Debug\120\androidx\proguard\8c706671-8918-41ff-b64d-6997153046ec.cfg

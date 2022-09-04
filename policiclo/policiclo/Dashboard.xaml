@@ -37,20 +37,29 @@
                             <Label Grid.Column="1" 
                                    x:Name="UserCiclista"
                                    FontAttributes="Bold"
-                                   LineBreakMode="TailTruncation" />
+                                   LineBreakMode="TailTruncation"
+                                   TextColor="Black"
+                                   />
                             <Label Grid.Row="1"
                                 Grid.Column="1" 
                                 Text="Ciclista profesional"
                                 LineBreakMode="TailTruncation"
-                                FontAttributes="Italic" 
+                                FontAttributes="Italic"
+                                TextColor="Black"
+
                                 VerticalOptions="End" />
                         </Grid>
                     </Frame>
-                    <Label Text="Tus Coordenadas"/>
-                    <Label Text="Latitud: "/>
-                    <Label x:Name="lat"/>
-                    <Label Text="Longitud: "/>
-                    <Label x:Name="log"/>
+                    <Label Text="Tus Coordenadas"                                   TextColor="Black" FontAttributes="Bold"
+/>
+                    <Label Text="Latitud: "                                   TextColor="Black"
+/>
+                    <Label x:Name="lat"                                   TextColor="Black"
+/>
+                    <Label Text="Longitud: "                                   TextColor="Black"
+/>
+                    <Label x:Name="log"                                   TextColor="Black"
+/>
                     <Button Text="Empezar" Clicked="Empezar"/>
                     <Button Text="Mostrar Mapa" Clicked="mostrar_mapa"/>
                     <BoxView HeightRequest="3"

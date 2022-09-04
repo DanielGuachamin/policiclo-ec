@@ -1099,5 +1099,5 @@ C:\Users\jerem\Desktop\UNIVERSIDAD\QUINTO_SEMESTRE\DESAPPMOV\CICLOTRIP\policiclo
 C:\Users\jerem\Desktop\UNIVERSIDAD\QUINTO_SEMESTRE\DESAPPMOV\CICLOTRIP\policiclo\policiclo.Android\obj\Release\120\android\src\crc64f40d45af4f45035b\MyEntryRenderer.java
 C:\Users\jerem\Desktop\UNIVERSIDAD\QUINTO_SEMESTRE\DESAPPMOV\CICLOTRIP\policiclo\policiclo.Android\obj\Release\120\res\drawable\logociclotrip.png
 C:\Users\jerem\Desktop\UNIVERSIDAD\QUINTO_SEMESTRE\DESAPPMOV\CICLOTRIP\policiclo\policiclo.Android\obj\Release\120\androidx\cecil\logociclotrip.png
-C:\Users\jerem\Desktop\UNIVERSIDAD\QUINTO_SEMESTRE\DESAPPMOV\CICLOTRIP\policiclo\policiclo.Android\obj\Release\120\androidx\jl\93ea253b-1819-4b52-95ab-c642d67fa065.jar
-C:\Users\jerem\Desktop\UNIVERSIDAD\QUINTO_SEMESTRE\DESAPPMOV\CICLOTRIP\policiclo\policiclo.Android\obj\Release\120\androidx\proguard\f3e5d403-fb3f-4c52-a756-281e5c2f8049.cfg
+C:\Users\jerem\Desktop\UNIVERSIDAD\QUINTO_SEMESTRE\DESAPPMOV\CICLOTRIP\policiclo\policiclo.Android\obj\Release\120\androidx\jl\5f01d1ac-92f9-4679-a34e-c536999364fa.jar
+C:\Users\jerem\Desktop\UNIVERSIDAD\QUINTO_SEMESTRE\DESAPPMOV\CICLOTRIP\policiclo\policiclo.Android\obj\Release\120\androidx\proguard\47df11f5-2b8c-44c0-a3b9-8827cbabb172.cfg
