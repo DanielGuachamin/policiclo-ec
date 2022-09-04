@@ -1,0 +1,18 @@
+<div class="car mt-5">
+    <div class="card-body">
+        <h3 class="card-title text-center">
+            Gracias por registrarte
+        </h3>
+        <div class="form-group mt-2">
+            <p class="text-center">
+                Hemos enviado un link de confirmación de cuenta a tu correo <strong>{{user}}</strong>
+            </p>
+            <p class="text-center">
+                Por favor revisa tu correo electrónico, en caso de no encontrar el correo busca en la carpeta de SPAM
+            </p>
+        </div>
+        <div class="form-group text-center mt-5">
+            <button class="btn btn-primary" (click)="onSendEmail()">Reenviar correo de verificación</button>
+        </div>
+    </div>
+</div>
