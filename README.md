@@ -82,19 +82,19 @@ Una vez con los permisos se puede ver la ubicación de los ciclistas en una pant
 A continuación, se puede ver la aplicación web con la información de la app móvil.
 
 <div align="center">
-    <img src="capturesPoli/inicioWeb.png" alt="UbicacionOtrosCicli" width="650" height="400">
+    <img src="capturesPoli/inicioWeb.png" alt="InicioWeb" width="650" height="400">
 </div>
 
 <div align="center">
-    <img src="capturesPoli/registroWeb.png" alt="UbicacionOtrosCicli" width="650" height="400">
+    <img src="capturesPoli/registroWeb.png" alt="RegistroWeb" width="650" height="400">
 </div>
 
 <div align="center">
-    <img src="capturesPoli/dashboardWeb.png" alt="UbicacionOtrosCicli" width="650" height="400">
+    <img src="capturesPoli/dashboardWeb.png" alt="DashboardWeb" width="650" height="400">
 </div>
 
 <div align="center">
-    <img src="capturesPoli/ubiCiclistaWeb.png" alt="UbicacionOtrosCicli" width="650" height="400">
+    <img src="capturesPoli/ubiCiclistaWeb.png" alt="UbicacionOtrosCicliWeb" width="650" height="400">
 </div>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
