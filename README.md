@@ -137,11 +137,11 @@ A continuación, se puede ver la aplicación web con la información de la app m
 
 Encuentra en el siguiente link el video de la explicación técnica del código
 
-* [Video](https://clipchamp.com/watch/uIK4CbWSVae) 
+* [Video](https://www.youtube.com/watch?v=ztNyLouYODk) 
 
 También contamos con un video que explica la funcionalidad de las aplicaciones
 
-* [Video](https://clipchamp.com/watch/uIK4CbWSVae) 
+* [Video](https://youtu.be/Bkp_r7k_lgQ) 
 
 Puedes visitar la aplicación web dirigiendote al siguinete enlace
 
