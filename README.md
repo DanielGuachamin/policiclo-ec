@@ -9,6 +9,8 @@
 
 <img src="capturesPoli/googleplay.png" alt="googleplay" width="20" height="20"> Descarga la app en Google Play Store → [Play Store](https://play.google.com/store/apps/details?id=com.dev2022.policiclo)
 
+
+<img src="https://seeklogo.com/images/A/android-icon-logo-DB06FA8B39-seeklogo.com.png" alt="androidApk" width="30" height="30"> Descarga el apk → [APK](https://epnecuador-my.sharepoint.com/:u:/g/personal/jeremy_leon_epn_edu_ec/EfbKqrAJtIVCtciYvPOlW5MBDQ4JZP37a7u0vuTII4MlIg?e=zgmXbl)
 ## Acerca del proyecto
 
 <div align="center">
