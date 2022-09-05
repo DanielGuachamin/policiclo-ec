@@ -7,7 +7,7 @@
 * Jeremy León
 * Cindy Yazán
 
-<img src="capturesPoli/googleplay.png" alt="googleplay" width="20" height="20"> Descarga la app en Google Play Store → [Play Store](https://play.google.com/store/apps/details?id=com.zeopoxa.fitness.cycling.bike&hl=es_419&gl=US)
+<img src="capturesPoli/googleplay.png" alt="googleplay" width="20" height="20"> Descarga la app en Google Play Store → [Play Store](https://play.google.com/store/apps/details?id=com.dev2022.policiclo)
 
 ## Acerca del proyecto
 
